@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LetsChat</title>
+    <script  defer src="http://localhost:8000/socket.io/socket.io.js"></script>
+<script defer src="/js/client.js"></script>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        body{
+            height:100vh; 
+            background: linear-gradient(rgb(123, 150, 165),rgb(91, 141, 216));
+        }
+        .logo{
+            height: 100px;
+            width: 100px;
+            margin: auto;
+            display: block;
+        }
+        .container{
+            max-width: 1000px;
+            margin: auto;
+            background: #000;
+            height: 60vh;
+            overflow-y: auto;
+        }
+        .message{
+            background-color:aliceblue ;
+            width: 24%;
+            padding:10px;
+            margin:17px 12px;
+            border: 2px solid yellow;
+            
+            
+        }
+        .left{
+            float: left;
+            clear: both;
+        }
+        .right{
+            float: right;
+            clear: both;
+        }
+        #send-cont{
+            text-align: center;
+            display: block;
+            margin: auto;
+            max-width: 550px;
+            padding-top: 5px;
+            
+
+        }
+        #messageInp{
+            width: 90%;
+            height: 30px;
+        }
+        .btn{
+            cursor: pointer;
+            border: 2px solid rgb(50, 139, 211);
+            background-color: rgb(50, 139, 211);
+            border-radius: 5px;
+            /* padding:11px; */
+
+        }
+    </style>
+</head>
+<body>
+    <nav>
+        <img class="logo" src="/img/wp.png" alt="">
+    </nav>
+    <div class="container">
+        
+    </div>
+    <div class="send">
+        <form action="#" id="send-cont">
+            <input type="text" name="messageInp" id="messageInp"> 
+            <button type="submit" class="btn">Send</button>
+        </form>
+    </div>
+</body>
+
+</html>
