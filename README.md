@@ -1,2 +1,2 @@
 # letschat
-simple whatsapp clone madee by using Socket IO and nodeJS
+simple whatsapp clone made by using Socket IO and nodeJS
